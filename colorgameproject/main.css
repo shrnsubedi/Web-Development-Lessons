@@ -1,0 +1,86 @@
+* {
+  margin : 0px;
+  padding : 0px;
+  font-family: "Avenir";
+}
+
+body{
+  background-color: #232323;
+}
+
+.head-container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color:steelblue;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.title{
+  font-weight: normal;
+  color: white;
+  text-align: center;
+}
+
+.rgb-value{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.nav-bar-container{
+  background: #ffffff;
+  text-align: center;
+}
+
+.bottom-div{
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.all-nav-items{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-item{
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 10px;
+  color: #3f75b2;
+  font-size: inherit;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+
+.nav-item:hover{
+  background-color: steelblue;
+  color: white;
+}
+
+#game-text{
+  display: inline-block;
+  width: 20%;
+}
+
+.squares{
+  width: 30%;
+  background: pink;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  border-radius: 15px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.selected{
+  background-color: steelblue;
+  color: white;
+}

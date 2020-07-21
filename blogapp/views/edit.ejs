@@ -1,0 +1,26 @@
+<%- include("partials/header")  %>
+<div class="ui main text container segment">
+  <div class="ui huge header">Edit Blog</div>
+  <%# HTML Forms dont support PUT request so we need to override the post as a put request
+      by using ?_method=PUT method ovveride will treat the url as a put request rather than POST
+   %>
+  <form class="ui form" action="/blogs/<%=blog._id %>?_method=PUT" method="POST">
+    <div class="field">
+      <label>
+        Title
+      </label>
+      <input type="text" name="blog[title]" value="<%=blog.title %>">
+    </div>
+    <div class="field">
+      <label>Image</label>
+      <input type="text" name="blog[image]" value="<%=blog.image %>">
+    </div>
+    <div class=" field">
+      <label>Blog Content</label>
+      <textarea required name="blog[body]"><%=blog.body %></textarea>
+    </div>
+    <input class="ui violet basic button" type="submit">
+
+  </form>
+</div>
+<%- include("partials/footer")  %>
